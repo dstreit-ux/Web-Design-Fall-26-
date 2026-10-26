@@ -1,0 +1,7 @@
+/* STUDENT CUSTOM CSS: Add at least FIVE meaningful CSS rules here.
+   Bootstrap is in bootstrap.min.css. Do not edit the Bootstrap file.
+   These two example rules show how to start; replace or improve them. */
+body { background-color: #fff; }
+.card-img-top { height: 180px; object-fit: cover; }
+
+/* TODO: Add your own styles for typography, colors, borders, hover effects, etc. */

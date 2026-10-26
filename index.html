@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Interest Website | Bootstrap Project</title>
+  <!-- Bootstrap 5.3.8 is stored IN THIS PROJECT. No CDN required. -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Student styles load after Bootstrap so they can override it. -->
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/bootstrap.bundle.min.js" defer></script>
+</head>
+<body>
+  <!-- TODO 1: Change the site title and navigation labels. -->
+  <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#home">My Interest Site</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#highlights">Highlights</a></li>
+          <li class="nav-item"><a class="nav-link" href="#resources">Resources</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header id="home" class="py-5 bg-light border-bottom">
+    <div class="container">
+      <span class="badge text-bg-success mb-3">Bootstrap 5.3.8 • Local Files</span>
+      <h1 class="display-5 fw-bold">A Website About My Interest</h1>
+      <p class="lead">Replace this introduction with 2–3 sentences about your school-appropriate topic.</p>
+      <a href="#highlights" class="btn btn-primary btn-lg">Explore Highlights</a>
+    </div>
+  </header>
+
+  <main class="container py-5">
+    <section id="about" class="mb-5">
+      <h2>About My Topic</h2>
+      <p><!-- TODO 2: Explain your topic and why you chose it. -->This is sample text. Replace it with an original paragraph.</p>
+    </section>
+
+    <section id="highlights" class="mb-5">
+      <h2 class="mb-3">Three Highlights</h2>
+      <!-- TODO 3: Keep the responsive grid. Replace the three example cards. -->
+      <div class="row g-4">
+        <div class="col-12 col-md-6 col-lg-4">
+          <article class="card h-100 shadow-sm">
+            <img src="assets/highlight-1.svg" class="card-img-top" alt="Illustration placeholder for highlight one">
+            <div class="card-body d-flex flex-column">
+              <h3 class="h5 card-title">Highlight One</h3>
+              <p class="card-text">Explain one interesting part of your topic.</p>
+              <a href="#resources" class="btn btn-outline-primary mt-auto">Learn More</a>
+            </div>
+          </article>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <article class="card h-100 shadow-sm">
+            <img src="assets/highlight-2.svg" class="card-img-top" alt="Illustration placeholder for highlight two">
+            <div class="card-body d-flex flex-column">
+              <h3 class="h5 card-title">Highlight Two</h3>
+              <p class="card-text">Explain a second interesting part of your topic.</p>
+              <a href="#resources" class="btn btn-outline-primary mt-auto">Learn More</a>
+            </div>
+          </article>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <article class="card h-100 shadow-sm">
+            <img src="assets/highlight-3.svg" class="card-img-top" alt="Illustration placeholder for highlight three">
+            <div class="card-body d-flex flex-column">
+              <h3 class="h5 card-title">Highlight Three</h3>
+              <p class="card-text">Explain a third interesting part of your topic.</p>
+              <a href="#resources" class="btn btn-outline-primary mt-auto">Learn More</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="resources" class="p-4 rounded bg-light">
+      <h2>Resources and Credits</h2>
+      <p><!-- TODO 4: Replace this with real, working links and image credits. -->List sources for facts and images here.</p>
+      <a class="btn btn-success" href="#home">Back to Top</a>
+    </section>
+  </main>
+
+  <footer class="border-top py-3 text-center text-secondary">
+    <small>Created for a Web Design Bootstrap project • Replace with your name or site credit</small>
+  </footer>
+</body>
+</html>
